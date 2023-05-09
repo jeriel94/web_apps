@@ -1,0 +1,25 @@
+ <h1> Tacos! </h1> 
+ 
+ <p> Let's eat some damn tacos</p>
+ <p> Mmmmm!</p>
+
+
+<% tacos = ["Carnitas", "Al Pastor", "Camarones"]  %>
+<!-- This how you comment. -->
+
+<!--<% %> is how to enter ruby code in html. -->
+<p> There are <%= tacos.count %> tacos </p>
+ <!-- Static way to show a list
+ <ul> 
+ <li> Carnitas </li>
+  <li> Al Pastor</li>
+  <li> Camarones</li>
+ </ul> 
+ -->
+
+  <ul> 
+    <% for taco in tacos %>
+     <li> <%= taco %> </li>
+    <%end%>
+ </ul>
+ <!-- This how you do a loop in HTML. -->
