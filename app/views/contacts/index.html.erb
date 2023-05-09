@@ -8,10 +8,11 @@
 <ul>
  <% for contact in contacts%>
   <li> 
+    <% company = Company.find_by({ "id" => contact["company_id"]}) %>
     <%= contact["first_name"]%>
     <%= contact["last_name"]%>  
-    at
-    <%= contact["company_id"]%> 
+    @
+    <%= company["name"]%> 
   </li>
  <%end%>
 
