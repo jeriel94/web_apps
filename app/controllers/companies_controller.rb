@@ -1,5 +1,5 @@
 class CompaniesController < ApplicationController
   def index
-    render :template
+    render :template => "companies/index"
   end
 end
